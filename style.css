@@ -1,6 +1,6 @@
 /*Global Style */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,10 +12,12 @@ html {
   --text-color: #f59d10;
   scroll-behavior: smooth;
 }
+
 ul {
   list-style: none;
 }
 a {
+  font-family: 'Roboto';
   font-size: var(--text);
   text-decoration: none;
   color: black;
@@ -42,6 +44,7 @@ nav {
 }
 
 .nav-links {
+  font-family: "Ruhl";
   display: flex;
   margin: 2rem;
 }
@@ -55,36 +58,42 @@ nav {
 }
 
 /* Hero */
-.hero-introduction{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    background-image: url("/img/fabian-quintero-UWQP2mh5YJI-unsplash.jpg");
-    object-fit: cover;
-  
-   
+.hero-introduction {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url("/img/fabian-quintero-UWQP2mh5YJI-unsplash.jpg");
+  object-fit: cover;
 }
-.hero-img{
-    height: 20%;
-    margin-top: 20rem;
+.hero-img {
+  height: 20%;
+  margin-top: 20rem;
 }
-.hero-introduction h1{
-    font-size: 2rem;
-    color: white;
-
+.hero-introduction h1 {
+  font-size: 2rem;
+  color: white;
 }
-.hero-btn{
-    border-radius: 3rem;
-    padding: 1rem 3rem;
-    margin-top: 5rem;
-    background: rgb(54, 2, 2);
-    color: white;
+.hero-btn {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: #f59d10;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  margin-top: 5rem;
+  color: black;
+  text-align: center;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background-color: #9c6306;
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 925px) {
-  
   .burger {
     position: relative; /*because we were not able to see the white color on the burger */
     display: block;
@@ -160,14 +169,13 @@ nav {
   }
 
   /* hero-image */
-  .hero-img{
+  .hero-img {
     height: 10%;
     margin-top: 20rem;
-}
-.hero-introduction h1{
-  font-size: 1rem;
-  color: white;
-  align-items: center;
-
-}
+  }
+  .hero-introduction h1 {
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+  }
 }
